@@ -6,113 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uzochukwu Ikemdinachi - CV</title>
     <style>
+        /* Standard system fonts for best PDF compatibility */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            color: #333;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #f9f9f9;
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            color: #2c3e50;
+            background-color: #f4f4f4;
         }
 
         .cv-container {
+            max-width: 800px;
+            margin: 30px auto;
             background-color: white;
-            padding: 40px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+            padding: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 5px;
-            font-size: 28px;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-
-        h2 {
-            color: #2c3e50;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            font-size: 20px;
-            border-bottom: 1px solid #ecf0f1;
-            padding-bottom: 5px;
-        }
-
-        .contact {
-            font-size: 0.95em;
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .section {
+        header {
+            text-align: center;
             margin-bottom: 25px;
         }
 
-        ul {
-            padding-left: 20px;
+        h1 {
+            margin: 0 0 5px 0;
+            font-size: 26px;
+            color: #2c3e50;
         }
 
-        li {
-            margin-bottom: 8px;
+        h2 {
+            margin: 25px 0 8px 0;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #2c3e50;
+            border-bottom: 1.5px solid #3498db;
+            padding-bottom: 3px;
+        }
+
+        .contact {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        .section {
+            margin-bottom: 15px;
+        }
+
+        .experience-item {
+            margin-bottom: 15px;
+        }
+
+        .job-header {
+            margin-bottom: 4px;
         }
 
         .job-title {
             font-weight: bold;
-            color: #2c3e50;
+            font-size: 15px;
         }
 
         .date {
-            font-style: italic;
+            font-size: 13px;
             color: #7f8c8d;
+            float: right;
         }
 
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 10px;
+        ul {
+            padding-left: 20px;
+            margin: 5px 0;
         }
 
-        .skill-tag {
-            background: #eef5ff;
-            padding: 5px 10px;
+        li {
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        .skills-text {
+            font-size: 14px;
+            background: #f9f9f9;
+            padding: 10px;
             border-radius: 4px;
-            font-size: 0.9em;
-            border-left: 3px solid #3498db;
+            border: 1px solid #eee;
+        }
+
+        p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        /* Clears the float for the dates */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
         }
 
         @media print {
             body {
                 background-color: white;
+            }
+
+            .cv-container {
                 margin: 0;
-                padding: 0;
-            }
-
-            .cv-container {
                 box-shadow: none;
-                padding: 20px;
-            }
-        }
-
-        @media(max-width: 768px) {
-            body {
-                margin: 20px;
+                width: 100%;
+                padding: 40px;
             }
 
-            .cv-container {
-                padding: 20px;
+            .date {
+                float: right;
             }
         }
     </style>
@@ -120,87 +131,71 @@
 
 <body>
     <div class="cv-container">
-        <h1>Uzochukwu Ikemdinachi</h1>
-        <p class="contact">
-            Email: <a href="mailto:uzochukwulikemdinachi@gmail.com">uzochukwulikemdinachi@gmail.com</a> |
-            Phone: +2347041500989 |
-            Location: Nigeria |
-            GitHub: <a href="https://github.com/Cavsteeek" target="_blank">github.com/Cavsteeek</a> |
-            LinkedIn: <a href="https://www.linkedin.com/in/uzoikemdinachi"
-                target="_blank">linkedin.com/in/uzoikemdinachi</a>
-        </p>
+        <header>
+            <h1>Uzochukwu Ikemdinachi .C., GMCPN</h1>
+            <p class="contact">
+                Email: <a href="mailto:uzochukwulikemdinachi@gmail.com">uzochukwulikemdinachi@gmail.com</a> | Phone:
+                +2347041500989 | Location: Nigeria<br>
+                GitHub: <a href="https://github.com/Cavsteeek" target="_blank">github.com/Cavsteeek</a> | LinkedIn: <a
+                    href="https://www.linkedin.com/in/uzoikemdinachi" target="_blank">linkedin.com/in/uzoikemdinachi</a>
+            </p>
+        </header>
 
         <div class="section">
-            <h2>Personal Details</h2>
-            <p>
-                <strong>Date of Birth:</strong> 25 October 2005<br>
-                <strong>Gender:</strong> Male<br>
-                <strong>State of Origin:</strong> Abia State
-            </p>
+            <h2>Professional Summary</h2>
+            <p>Backend engineer with experience building and maintaining backend systems using Java and Node.js.
+                Experienced with microservices architecture, database design, and API development. Seeking roles focused
+                on practical backend development.</p>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-text">
+                Java (Spring Boot), Node.js (Express.js), TypeScript, Microservices, Docker, JWT Auth, Python (FastAPI),
+                Vue.js
+            </div>
         </div>
 
         <div class="section">
             <h2>Experience</h2>
 
-            <p><span class="job-title">Intern Backend Developer</span> — Quic Technologies LTD<br>
-                <span class="date">2025</span>
-            </p>
-            <ul>
-                <li>Worked in a team to build the core backend of the Quic project using Node.js and TypeScript.</li>
-            </ul>
-        </div>
+            <div class="experience-item">
+                <div class="job-header clearfix">
+                    <span class="job-title">Intern Backend Developer — Quic Technologies LTD</span>
+                    <span class="date">(2025)</span>
+                </div>
+                <ul>
+                    <li>Worked on backend development for a FinTech WhatsApp bot using Node.js and TypeScript</li>
+                    <li>Implemented transaction APIs and handled messaging integration</li>
+                </ul>
+            </div>
 
-
-        <div class="section">
-            <h2>Internship Experience (Undergraduate SIWES)</h2>
-
-            <p><span class="job-title">Student Intern — Aptech Computer Education</span><br>
-                <span class="date">300 Level</span>
-            </p>
-            <ul>
-                <li>Learnt core programming concepts with a strong focus on Java.</li>
-                <li>Assisted instructors during practical sessions by helping students understand coding exercises.</li>
-                <li>Practiced building Java applications using the Springboot framework.</li>
-            </ul>
+            <div class="experience-item">
+                <div class="job-header clearfix">
+                    <span class="job-title">Backend Developer</span>
+                    <span class="date">(2022 – Present)</span>
+                </div>
+                <ul>
+                    <li>Built a Patient Management System using microservices architecture and Docker</li>
+                    <li>Developed an Event Management System with Spring Boot and PostgreSQL</li>
+                    <li>Created a Bookstore application using Spring Boot with Vue.js frontend</li>
+                </ul>
+            </div>
         </div>
 
         <div class="section">
             <h2>Education</h2>
-            <p><strong>B.Sc. Software Engineering</strong><br />
-                Babcock University<br />
-                <span class="date">2022 – 2025</span>
-            </p>
+            <div class="clearfix">
+                <p><strong>B.Sc. Software Engineering</strong> <span class="date">Babcock University (2022 –
+                        2025)</span></p>
+            </div>
         </div>
 
         <div class="section">
-            <h2>Referees</h2>
-
-            <p>
-                <strong>Mr. Abdulmumuni Ajoge</strong><br>
-                Instructor<br>
-                Aptech Computer Education<br>
-                Phone: +234 806 836 5268<br>
-                Email: abdulmumuniajoge@gmail.com
-            </p>
-
-            <p>
-                <strong>Mr James Afolabi</strong><br>
-                Chief Technical Officer<br>
-                Quic Technologies LTD<br>
-                Phone: +234 813 201 9026<br>
-            </p>
-        </div>
-
-
-        <div class="section">
-            <h2>Certifications</h2>
+            <h2>Certifications & Licenses</h2>
             <ul>
-                <li>Certified Member, Computer Professionals (CPN)</li>
-                <li>CompTIA A+</li>
-            </ul>
- <ul>
-                <li>Introduction to IoT and Digital Transformation</li>
-                <li>Cisco Networking Academy</li>
+                <li>GMCPN: Certified Member, Computer Professionals (Registration Council of Nigeria)</li>
+                <li>Introduction to IoT and Digital Transformation: Cisco Networking Academy</li>
             </ul>
         </div>
     </div>

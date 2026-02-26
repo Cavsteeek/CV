@@ -1,219 +1,98 @@
-<!DOCTYPE html>  
-  <html lang="en">  
+<!DOCTYPE html>   
+   <html lang="en">   
   
-  <head>  
-      <meta charset="UTF-8" />  
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
-      <title>Uzochukwu Ikemdinachi - CV</title>  
-      <style>  
-          /* Standard system fonts for best PDF compatibility */  
-          body {  
-              font-family: 'Segoe UI', Helvetica, Arial, sans-serif;  
-              margin: 0;  
-              padding: 0;  
-              line-height: 1.5;  
-              color: #2c3e50;  
-              background-color: #f4f4f4;  
-          }  
-  
-          .cv-container {  
-              max-width: 800px;  
-              margin: 30px auto;  
-              background-color: white;  
-              padding: 50px;  
-              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
-          }  
-  
-          header {  
-              text-align: center;  
-              margin-bottom: 25px;  
-          }  
-  
-          h1 {  
-              margin: 0 0 5px 0;  
-              font-size: 26px;  
-              color: #2c3e50;  
-          }  
-  
-          h2 {  
-              margin: 25px 0 8px 0;  
-              font-size: 14px;  
-              font-weight: bold;  
-              text-transform: uppercase;  
-              letter-spacing: 1px;  
-              color: #2c3e50;  
-              border-bottom: 1.5px solid #3498db;  
-              padding-bottom: 3px;  
-          }  
-  
-          .contact {  
-              font-size: 13px;  
-              color: #555;  
-              margin-bottom: 0;  
-          }  
-  
-          .section {  
-              margin-bottom: 15px;  
-          }  
-  
-          .experience-item {  
-              margin-bottom: 15px;  
-          }  
-  
-          /* FIXED: Using Flexbox instead of floats to prevent PDF clipping */
-          .job-header {  
-              display: flex;
-              justify-content: space-between;
-              align-items: baseline;
-              margin-bottom: 4px;  
-          }  
-  
-          .job-title {  
-              font-weight: bold;  
-              font-size: 15px;  
-              flex: 1; /* Allows title to take space without pushing date off page */
-          }  
-  
-          .date {  
-              font-size: 13px;  
-              color: #7f8c8d;  
-              white-space: nowrap; /* Keeps date on one line */
-              margin-left: 10px;
-          }  
-  
-          ul {  
-              padding-left: 20px;  
-              margin: 5px 0;  
-          }  
-  
-          li {  
-              margin-bottom: 4px;  
-              font-size: 14px;  
-          }  
-  
-          .skills-text {  
-              font-size: 14px;  
-              background: #f9f9f9;  
-              padding: 10px;  
-              border-radius: 4px;  
-              border: 1px solid #eee;  
-          }  
-  
-          p {  
-              margin: 5px 0;  
-              font-size: 14px;  
-          }  
-  
-          a {  
-              color: #3498db;  
-              text-decoration: none;  
-          }  
-  
-          .edu-header {
-              display: flex;
-              justify-content: space-between;
-              align-items: baseline;
-          }
+   <head>   
+       <meta charset="UTF-8" />   
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
+       <title>Uzochukwu Ikemdinachi - CV</title>   
+       <style>   
+           * {
+               box-sizing: border-box; /* Prevents padding from expanding width */
+           }
 
-          @media print {  
-              body { background-color: white; }  
-              .cv-container { margin: 0; box-shadow: none; width: 100%; padding: 40px; }  
-          }  
-      </style>  
-  </head>  
+           body {   
+               font-family: 'Segoe UI', Helvetica, Arial, sans-serif;   
+               margin: 0;   
+               padding: 0;   
+               line-height: 1.5;   
+               color: #2c3e50;   
+               background-color: #f4f4f4;   
+           }   
   
-  <body>  
-      <div class="cv-container">  
-          <header>  
-              <h1>Uzochukwu Ikemdinachi .C., GMCPN</h1>  
-              <p class="contact">  
-                  Email: <a href="mailto:uzochukwulikemdinachi@gmail.com">uzochukwulikemdinachi@gmail.com</a> | Phone:  
-                  +2347041500989 | Location: Nigeria<br>  
-                  GitHub: <a href="https://github.com/Cavsteeek" target="_blank">github.com/Cavsteeek</a> | LinkedIn: <a  
-                      href="https://www.linkedin.com/in/uzoikemdinachi" target="_blank">linkedin.com/in/uzoikemdinachi</a>  
-              </p>  
-          </header>  
+           .cv-container {   
+               max-width: 800px;   
+               margin: 20px auto;   
+               background-color: white;   
+               padding: 40px; /* Reduced slightly to give more margin safety */
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);   
+           }   
   
-          <div class="section">  
-              <h2>Professional Summary</h2>  
-              <p>Backend engineer with experience building and maintaining backend systems using Java and Node.js.  
-                  Experienced with microservices architecture, database design, and API development. </p>  
-          </div>  
+           header {   
+               text-align: center;   
+               margin-bottom: 25px;   
+           }   
   
-          <div class="section">  
-              <h2>Technical Skills</h2>  
-              <div class="skills-text">  
-                  Java (Spring Boot), Node.js (Express.js), TypeScript, Microservices, Docker, JWT Auth, Python (FastAPI),  
-                  Vue.js, PostgreSQL, IT Administration  
-              </div>  
-          </div>  
+           h1 {   
+               margin: 0 0 5px 0;   
+               font-size: 26px;   
+               color: #2c3e50;   
+           }   
   
-          <div class="section">  
-              <h2>Experience</h2>  
+           h2 {   
+               margin: 20px 0 8px 0;   
+               font-size: 14px;   
+               font-weight: bold;   
+               text-transform: uppercase;   
+               letter-spacing: 1px;   
+               color: #2c3e50;   
+               border-bottom: 1.5px solid #3498db;   
+               padding-bottom: 3px;   
+           }   
   
-              <div class="experience-item">  
-                 <div class="job-header">  
-                     <span class="job-title">Multi-Departmental Intern — Jimcol Resources LTD</span>  
-                     <span class="date">(2026 – Present)</span>  
-                 </div>  
-                 <ul>  
-                     <li><strong>IT Administration:</strong> Managed internal network systems and provided technical support for staff.</li>  
-                     <li><strong>Integrated Drilling & Support Services (IDSS):</strong> Assisted in technical support workflows for drilling operations.</li>  
-                     <li><strong>Logistics & Procurement:</strong> Supported supply chain operations, vendor coordination, and inventory management.</li>  
-                     <li><strong>Facilities Management (Base Office):</strong> Acted as administrative lead for office maintenance; supervised ground staff and ensured optimal operation of essential utilities (water, power, and landscaping).</li>  
-                 </ul>  
-             </div>  
+           .contact {   
+               font-size: 13px;   
+               color: #555;   
+               margin-bottom: 0;   
+           }   
   
-              <div class="experience-item">  
-                  <div class="job-header">  
-                      <span class="job-title">Intern Backend Developer — Quic Technologies LTD</span>  
-                      <span class="date">(2025)</span>  
-                  </div>  
-                  <ul>  
-                      <li>Worked on backend development for a FinTech WhatsApp bot using Node.js and TypeScript.</li>  
-                      <li>Implemented transaction APIs and handled messaging integration.</li>  
-                  </ul>  
-              </div>  
+           .section {   
+               margin-bottom: 15px;   
+           }   
   
-              <div class="experience-item">  
-                 <div class="job-header">  
-                     <span class="job-title">Student Intern (SIWES) — Aptech Computer Education</span>  
-                     <span class="date">(2024)</span>  
-                 </div>  
-                 <ul>  
-                     <li>Developed core programming proficiency with a focus on Java and Spring Boot.</li>  
-                     <li>Assisted instructors during practical labs, helping students debug and understand coding logic.</li>  
-                     <li>Built foundational Java applications using modern development frameworks.</li>  
-                 </ul>  
-             </div>  
-          </div>  
+           .experience-item {   
+               margin-bottom: 15px;   
+           }   
   
-          <div class="section">  
-              <h2>Technical Projects</h2>  
-              <div class="experience-item">  
-                  <ul>  
-                      <li><strong>Patient Management System:</strong> Built using microservices architecture and Docker.</li>  
-                      <li><strong>Event Management System:</strong> Developed with Spring Boot and PostgreSQL.</li>  
-                      <li><strong>Full-Stack Bookstore:</strong> Created using Spring Boot with a Vue.js frontend.</li>  
-                  </ul>  
-              </div>  
-          </div>  
+           /* GRID FIX: Forces a two-column layout that cannot overflow */ 
+           .job-header, .edu-header {   
+               display: grid;
+               grid-template-columns: 1fr auto;
+               align-items: baseline;
+               margin-bottom: 4px;   
+           }   
   
-          <div class="section">  
-             <h2>Education</h2>  
-             <div class="edu-header">  
-                 <p><strong>B.Sc. Software Engineering</strong></p>
-                 <span class="date">Babcock University (2022 – 2025)</span>  
-             </div>  
-         </div>  
+           .job-title {   
+               font-weight: bold;   
+               font-size: 15px;   
+               padding-right: 10px;
+           }   
   
-          <div class="section">  
-              <h2>Certifications & Licenses</h2>  
-              <ul>  
-                  <li>GMCPN: Certified Member, Computer Professionals (Registration Council of Nigeria)</li>  
-                  <li>Introduction to IoT and Digital Transformation: Cisco Networking Academy</li>  
-              </ul>  
-          </div>  
-      </div>  
-  </body>  
-  </html>
+           .date {   
+               font-size: 13px;   
+               color: #7f8c8d;   
+               text-align: right;
+               white-space: nowrap; 
+           }   
+  
+           ul {   
+               padding-left: 20px;   
+               margin: 5px 0;   
+           }   
+  
+           li {   
+               margin-bottom: 4px;   
+               font-size: 14px;   
+           }   
+  
+           .skills-text {   
+               font-size:

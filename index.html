@@ -39,6 +39,8 @@
             font-size: 20px;
             border-bottom: 1px solid #ecf0f1;
             padding-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .contact {
@@ -50,10 +52,6 @@
         a {
             color: #2980b9;
             text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
         }
 
         .section {
@@ -76,6 +74,7 @@
         .date {
             font-style: italic;
             color: #7f8c8d;
+            float: right;
         }
 
         .skills-container {
@@ -87,32 +86,26 @@
 
         .skill-tag {
             background: #eef5ff;
-            padding: 5px 10px;
+            padding: 5px 12px;
             border-radius: 4px;
-            font-size: 0.9em;
+            font-size: 0.85em;
             border-left: 3px solid #3498db;
+            font-weight: 500;
         }
 
         @media print {
             body {
                 background-color: white;
                 margin: 0;
-                padding: 0;
             }
 
             .cv-container {
                 box-shadow: none;
                 padding: 20px;
             }
-        }
 
-        @media(max-width: 768px) {
-            body {
-                margin: 20px;
-            }
-
-            .cv-container {
-                padding: 20px;
+            .date {
+                float: right;
             }
         }
     </style>
@@ -120,47 +113,55 @@
 
 <body>
     <div class="cv-container">
-        <h1>Uzochukwu Ikemdinachi</h1>
+        <h1>Uzochukwu Ikemdinachi .C., GMCPN</h1>
         <p class="contact">
             Email: <a href="mailto:uzochukwulikemdinachi@gmail.com">uzochukwulikemdinachi@gmail.com</a> |
             Phone: +2347041500989 |
-            Location: Nigeria |
+            Location: Abuja, Nigeria <br>
             GitHub: <a href="https://github.com/Cavsteeek" target="_blank">github.com/Cavsteeek</a> |
             LinkedIn: <a href="https://www.linkedin.com/in/uzoikemdinachi"
                 target="_blank">linkedin.com/in/uzoikemdinachi</a>
         </p>
 
         <div class="section">
-            <h2>Personal Details</h2>
-            <p>
-                <strong>Date of Birth:</strong> 25 October 2005<br>
-                <strong>Gender:</strong> Male<br>
-                <strong>State of Origin:</strong> Abia State
+            <h2>Professional Summary</h2>
+            <p>Analytical <strong>Backend Engineer</strong> with 3 years of experience building scalable systems using
+                <strong>Java (Spring Boot)</strong> and <strong>Node.js (Express.js)</strong>. Expert in designing
+                secure REST APIs, microservices, and robust database schemas. Focused on writing clean, maintainable
+                code that ensures high service availability.
             </p>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-tag">Java (Spring Boot)</div>
+                <div class="skill-tag">Node.js (Express.js)</div>
+                <div class="skill-tag">TypeScript</div>
+                <div class="skill-tag">Microservices</div>
+                <div class="skill-tag">Docker</div>
+                <div class="skill-tag">PostgreSQL</div>
+                <div class="skill-tag">Oracle SQL</div>
+                <div class="skill-tag">JWT Auth</div>
+                <div class="skill-tag">Python (FastAPI)</div>
+                <div class="skill-tag">Vue.js</div>
+            </div>
         </div>
 
         <div class="section">
             <h2>Experience</h2>
-
-            <p><span class="job-title">Intern Backend Developer</span> — Quic Technologies LTD<br>
-                <span class="date">2025</span>
-            </p>
+            <p><span class="job-title">Backend Software Engineer</span> <span class="date">2022 – Present</span></p>
             <ul>
-                <li>Worked in a team to build the core backend of the Quic project using Node.js and TypeScript.</li>
-            </ul>
-        </div>
-
-
-        <div class="section">
-            <h2>Internship Experience (Undergraduate SIWES)</h2>
-
-            <p><span class="job-title">Student Intern — Aptech Computer Education</span><br>
-                <span class="date">300 Level</span>
-            </p>
-            <ul>
-                <li>Learnt core programming concepts with a strong focus on Java.</li>
-                <li>Assisted instructors during practical sessions by helping students understand coding exercises.</li>
-                <li>Practiced building Java applications using the Springboot framework.</li>
+                <li>Architected a <strong>Patient Management System</strong> using Microservices and
+                    <strong>Docker</strong> to ensure modularity and consistent service availability.
+                </li>
+                <li>Engineered a secure <strong>Event Management System</strong> with Spring Boot and PostgreSQL,
+                    implementing <strong>JWT</strong> for stateless authentication.</li>
+                <li>Developed a decoupled <strong>Bookstore Webapp</strong> using Spring Boot and Vue.js, utilizing
+                    RESTful principles to handle complex data transactions.</li>
+                <li>Deployed and optimized RESTful APIs using <strong>Express.js</strong> and Node.js for
+                    high-concurrency application needs.</li>
+                <li>Managed database migrations and query optimization in PostgreSQL and Oracle environments.</li>
             </ul>
         </div>
 
@@ -173,34 +174,14 @@
         </div>
 
         <div class="section">
-            <h2>Referees</h2>
-
-            <p>
-                <strong>Mr. Abdulmumuni Ajoge</strong><br>
-                Instructor<br>
-                Aptech Computer Education<br>
-                Phone: +234 806 836 5268<br>
-                Email: abdulmumuniajoge@gmail.com
-            </p>
-
-            <p>
-                <strong>Mr James Afolabi</strong><br>
-                Chief Technical Officer<br>
-                Quic Technologies LTD<br>
-                Phone: +234 813 201 9026<br>
-            </p>
-        </div>
-
-
-        <div class="section">
-            <h2>Certifications</h2>
+            <h2>Certifications & Licenses</h2>
             <ul>
-                <li>Certified Member, Computer Professionals (CPN)</li>
-                <li>CompTIA A+</li>
-            </ul>
-            <ul>
-                <li>Introduction to IoT and Digital Transformation</li>
-                <li>Cisco Networking Academy</li>
+                <li><strong>GMCPN:</strong> Certified Member, Computer Professionals (Registration Council of Nigeria)
+                </li>
+                <li><strong>Introduction to IoT:</strong> Cisco Networking Academy</li>
+                <li><strong>Oracle Certified Professional:</strong> Java SE 8 Programmer</li>
+                <li><strong>Oracle Database 12c:</strong> Administration & Fundamentals</li>
+                <li><strong>Fundamentals of Computer Security</strong></li>
             </ul>
         </div>
     </div>

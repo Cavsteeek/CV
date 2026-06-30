@@ -4,186 +4,245 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Uzochukwu Ikemdinachi - CV</title>
+    <title>Uzochukwu Ikemdinachi — CV</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            color: #333;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #f9f9f9;
+        :root {
+            --ink: #1a1a1a;
+            --gray: #555555;
+            --rule: #cccccc;
+            --link: #1155cc;
         }
 
-        .cv-container {
-            background-color: white;
-            padding: 40px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, "Segoe UI", Calibri, Helvetica, Arial, sans-serif;
+            color: var(--ink);
+            margin: 0;
+            background: #ffffff;
+        }
+
+        .cv {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 56px 32px 80px;
         }
 
         h1 {
-            color: #2c3e50;
-            margin-bottom: 5px;
             font-size: 28px;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
+            font-weight: 700;
+            margin: 0 0 4px;
+            letter-spacing: -0.2px;
         }
 
-        h2 {
-            color: #2c3e50;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            font-size: 20px;
-            border-bottom: 1px solid #ecf0f1;
-            padding-bottom: 5px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .title {
+            font-size: 16px;
+            color: var(--gray);
+            margin: 0 0 14px;
         }
 
         .contact {
-            font-size: 0.95em;
-            color: #555;
-            margin-bottom: 20px;
+            font-size: 13px;
+            color: var(--gray);
+            margin: 0;
+            line-height: 1.6;
         }
 
-        a {
-            color: #2980b9;
+        .contact a {
+            color: var(--link);
             text-decoration: none;
         }
 
-        .section {
-            margin-bottom: 25px;
+        .contact a:hover {
+            text-decoration: underline;
         }
 
-        ul {
-            padding-left: 20px;
+        .sep {
+            color: var(--rule);
+            margin: 0 8px;
         }
 
-        li {
-            margin-bottom: 8px;
+        hr.top {
+            border: none;
+            border-top: 1px solid var(--rule);
+            margin: 24px 0 28px;
         }
 
-        .job-title {
-            font-weight: bold;
-            color: #2c3e50;
+        h2 {
+            font-size: 12.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid var(--rule);
+            padding-bottom: 6px;
+            margin: 30px 0 12px;
         }
 
-        .date {
-            font-style: italic;
-            color: #7f8c8d;
-            float: right;
+        h2:first-of-type {
+            margin-top: 0;
         }
 
-        .skills-container {
+        p.summary {
+            font-size: 14.5px;
+            line-height: 1.65;
+            margin: 0;
+        }
+
+        .skill-line {
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 0 0 6px;
+        }
+
+        .skill-line b {
+            font-weight: 700;
+        }
+
+        .role-row {
             display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 10px;
+            justify-content: space-between;
+            align-items: baseline;
+            margin: 14px 0 2px;
+            gap: 12px;
         }
 
-        .skill-tag {
-            background: #eef5ff;
-            padding: 5px 12px;
-            border-radius: 4px;
-            font-size: 0.85em;
-            border-left: 3px solid #3498db;
-            font-weight: 500;
+        .role-row:first-of-type {
+            margin-top: 0;
+        }
+
+        .role-title {
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .role-date {
+            font-size: 13px;
+            font-style: italic;
+            color: var(--gray);
+            white-space: nowrap;
+        }
+
+        ul.bullets {
+            margin: 6px 0 16px;
+            padding-left: 18px;
+        }
+
+        ul.bullets li {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 6px;
+            padding-left: 2px;
+        }
+
+        ul.bullets li::marker {
+            color: var(--gray);
+            content: "– ";
+        }
+
+        .project {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .project:last-child {
+            margin-bottom: 0;
+        }
+
+        .project b {
+            font-weight: 700;
         }
 
         @media print {
             body {
-                background-color: white;
-                margin: 0;
+                background: #fff;
             }
 
-            .cv-container {
-                box-shadow: none;
-                padding: 20px;
+            .cv {
+                padding: 0;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cv {
+                padding: 36px 20px 60px;
             }
 
-            .date {
-                float: right;
+            .role-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="cv-container">
-        <h1>Uzochukwu Ikemdinachi .C., GMCPN</h1>
+    <div class="cv">
+
+        <h1>Uzochukwu Ikemdinachi</h1>
+        <p class="title">Backend Software Engineer</p>
         <p class="contact">
-            Email: <a href="mailto:uzochukwulikemdinachi@gmail.com">uzochukwulikemdinachi@gmail.com</a> |
-            Phone: +2347041500989 |
-            Location: Abuja, Nigeria <br>
-            GitHub: <a href="https://github.com/Cavsteeek" target="_blank">github.com/Cavsteeek</a> |
-            LinkedIn: <a href="https://www.linkedin.com/in/uzoikemdinachi"
-                target="_blank">linkedin.com/in/uzoikemdinachi</a>
+            Abuja, Nigeria<span class="sep">|</span>+234 704 150 0989<span class="sep">|</span>
+            <a href="mailto:uzochukwulikemdinachi@gmail.com">uzochukwulikemdinachi@gmail.com</a>
+        </p>
+        <p class="contact">
+            <a href="https://github.com/Cavsteeek" target="_blank" rel="noopener">github.com/Cavsteeek</a>
+            <span class="sep">|</span>
+            <a href="https://www.linkedin.com/in/uzoikemdinachi" target="_blank"
+                rel="noopener">linkedin.com/in/uzoikemdinachi</a>
         </p>
 
-        <div class="section">
-            <h2>Professional Summary</h2>
-            <p>Analytical <strong>Backend Engineer</strong> with 3 years of experience building scalable systems using
-                <strong>Java (Spring Boot)</strong> and <strong>Node.js (Express.js)</strong>. Expert in designing
-                secure REST APIs, microservices, and robust database schemas. Focused on writing clean, maintainable
-                code that ensures high service availability.
-            </p>
+        <hr class="top" />
+
+        <h2>Summary</h2>
+        <p class="summary">
+            Backend engineer building scalable, secure systems with Java (Spring Boot) and Node.js (Express.js).
+            Comfortable across the stack, with hands-on experience designing REST APIs, microservices, and
+            relational data models in production-style projects.
+        </p>
+
+        <h2>Technical Skills</h2>
+        <p class="skill-line"><b>Languages &amp; Frameworks:</b> Java (Spring Boot), Node.js (Express.js), Python
+            (FastAPI), TypeScript, Vue.js</p>
+        <p class="skill-line"><b>Tools &amp; Practices:</b> Docker, Microservices, REST API Design, JWT Authentication
+        </p>
+
+        <h2>Experience</h2>
+        <div class="role-row">
+            <span class="role-title">Intern Backend Developer — Quic Technologies Ltd.</span>
+            <span class="role-date">2025</span>
+        </div>
+        <ul class="bullets">
+            <li>Built core backend logic for a fintech product enabling payments directly through a WhatsApp bot, using
+                Node.js and TypeScript.</li>
+            <li>Integrated payment processing with the PAGA gateway, handling transaction initiation, verification, and
+                webhook callbacks.</li>
+            <li>Worked with a team to design REST APIs supporting the bot's conversational payment flow.</li>
+        </ul>
+
+        <h2>Personal Projects</h2>
+        <p class="project"><b>E-commerce Management System:</b> Microservices architecture with Docker for modular,
+            consistently available services.</p>
+        <p class="project"><b>Event Management System:</b> Spring Boot and PostgreSQL backend with JWT for stateless
+            authentication.</p>
+        <p class="project"><b>Bookstore Web Application:</b> Decoupled app using Spring Boot and Vue.js, with RESTful
+            APIs handling complex data transactions.</p>
+
+        <h2>Education</h2>
+        <div class="role-row">
+            <span class="role-title">B.Sc. Software Engineering, Babcock University</span>
+            <span class="role-date">2022 – 2025</span>
         </div>
 
-        <div class="section">
-            <h2>Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill-tag">Java (Spring Boot)</div>
-                <div class="skill-tag">Node.js (Express.js)</div>
-                <div class="skill-tag">TypeScript</div>
-                <div class="skill-tag">Microservices</div>
-                <div class="skill-tag">Docker</div>
-                <div class="skill-tag">PostgreSQL</div>
-                <div class="skill-tag">Oracle SQL</div>
-                <div class="skill-tag">JWT Auth</div>
-                <div class="skill-tag">Python (FastAPI)</div>
-                <div class="skill-tag">Vue.js</div>
-            </div>
-        </div>
+        <h2>Certifications &amp; Licenses</h2>
+        <p class="skill-line"><b>GMCPN:</b> Certified Member, Computer Professionals (Registration Council of Nigeria)
+        </p>
+        <p class="skill-line"><b>Cisco Networking Academy:</b> Introduction to IoT</p>
 
-        <div class="section">
-            <h2>Experience</h2>
-            <p><span class="job-title">Backend Software Engineer</span> <span class="date">2022 – Present</span></p>
-            <ul>
-                <li>Architected a <strong>Patient Management System</strong> using Microservices and
-                    <strong>Docker</strong> to ensure modularity and consistent service availability.
-                </li>
-                <li>Engineered a secure <strong>Event Management System</strong> with Spring Boot and PostgreSQL,
-                    implementing <strong>JWT</strong> for stateless authentication.</li>
-                <li>Developed a decoupled <strong>Bookstore Webapp</strong> using Spring Boot and Vue.js, utilizing
-                    RESTful principles to handle complex data transactions.</li>
-                <li>Deployed and optimized RESTful APIs using <strong>Express.js</strong> and Node.js for
-                    high-concurrency application needs.</li>
-                <li>Managed database migrations and query optimization in PostgreSQL and Oracle environments.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>B.Sc. Software Engineering</strong><br />
-                Babcock University<br />
-                <span class="date">2022 – 2025</span>
-            </p>
-        </div>
-
-        <div class="section">
-            <h2>Certifications & Licenses</h2>
-            <ul>
-                <li><strong>GMCPN:</strong> Certified Member, Computer Professionals (Registration Council of Nigeria)
-                </li>
-                <li><strong>Introduction to IoT:</strong> Cisco Networking Academy</li>
-                <li><strong>Oracle Certified Professional:</strong> Java SE 8 Programmer</li>
-                <li><strong>Oracle Database 12c:</strong> Administration & Fundamentals</li>
-                <li><strong>Fundamentals of Computer Security</strong></li>
-            </ul>
-        </div>
     </div>
 </body>
 
